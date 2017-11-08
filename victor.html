@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Mi primera pagina web
+		</title>
+	</head>
+	<body>
+		<center><h1>Hola, esta es mi primera pagina web</h1></center>
+		<br />
+		<br />
+		<br />
+		<br />		
+		<center><button id="correrPrograma" onclick="mostrarSaludo();">Correr Programa</button><center>
+	</body>	
+</html>
+
+<script type="text/javascript">
+
+var nombre = 'Victor';
+var edad = 21;
+var contador = 1;
+
+
+function mostrarSaludo(){
+
+	console.log('Hola ' + nombre);
+	console.log('Gracias por visitar mi pagina web');
+	
+	if ( edad <= 20){
+		console.log('Estas muy joven');	
+	} else{
+		console.log('Estas un poco viejo');	
+	}
+
+	while(contador <= 5){
+		console.log('Entro en el ciclo');
+		contador = contador + 1;
+	}
+		
+}
+
+</script>
