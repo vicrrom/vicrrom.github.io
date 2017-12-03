@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+		<title>		
+			Programa Conversion a Binario. 
+		</title>
+	</head>
+	<body>
+		<center><h1>Convertir numeros en sistema decimal a binarios</h1></center>
+		Escribe un numero en sistema decimal: <input id="txtNumero" type="text" />
+		<p id="idParrafo1"><p>
+		<center><button id="correrPrograma1" onclick="convertirNumero();">Convertir numero</button><center>
+		
+	</body>	
+</html>
+
+<script type="text/javascript">
+
+function convertirNumero(){
+	var numero = $('#txtNumero').val();
+	var resultado = numero;
+	var cadenabinaria = '';
+	var residuo = 0;
+	
+	while (resultado != 0){
+		resultado = Math.trunc(numero/2);
+		residuo = numero % 2;
+		cadenabinaria = residuo + cadenabinaria; 
+		
+	//lert('Resultado: ' + resultado + ', Residuo: ' + residuo + 'Cadena binaria: ' + cadenabinaria);
+		
+		numero = resultado;
+    }
+    $('#idParrafo1').html(cadenabinaria); 
+}
+</script>

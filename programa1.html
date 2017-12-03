@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+		<title>		
+			Ejercicio 1
+		</title>
+	</head>
+	<body>
+		<center><h1>Aprendiendo a agregar componentes HTML</h1></center>
+		Nombre: <input id="txtNombre" type="text" />
+		Edad: <input id="txtEdad" type="text" />
+		<p id="idParrafo1"><p>
+		<center><button id="correrPrograma" onclick="saludarPersona();">Correr Programa</button><center>
+	</body>	
+</html>
+
+<script type="text/javascript">
+
+function saludarPersona(){
+	var nombre = $('#txtNombre').val();
+	var edad = $('#txtEdad').val();
+	//$('#idParrafo1').html('Hola ' + nombre + ' tu edad es ' + edad);
+	
+	if (edad < 30){
+		$('#idParrafo1').html('Hola ' + nombre + ' aun eres joven');
+	}
+	
+	if(edad >= 30 && edad <40){
+		$('#idParrafo1').html('Hola ' + nombre + ' eres un chavo/a ruco');
+	}
+	
+	if (edad >= 40){
+		$('#idParrafo1').html('Hola ' + nombre + ' ya estas viejo');
+	}
+}
+
+
+</script>
