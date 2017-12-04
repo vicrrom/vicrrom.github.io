@@ -1,0 +1,15 @@
+table, th, td {
+    border: 5px solid #D03981;
+    padding: 5px;
+	font: oblique bold 30px cursive;
+	color:#D03981;
+	background-color: #2ADBB2;
+}
+table {
+    border-spacing: 15px;
+}
+
+.estiloTabla{
+	width:100%;
+	background-color: blue;
+}
